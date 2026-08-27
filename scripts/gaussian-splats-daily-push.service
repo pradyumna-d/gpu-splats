@@ -1,0 +1,8 @@
+[Unit]
+Description=Push one Gaussian Splats file
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/acp/projects/gaussian-splats/scripts/push_one_file_daily.sh
